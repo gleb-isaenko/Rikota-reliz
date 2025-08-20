@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RIKOTA — сучасна стоматологія</title>
+  <meta name="description" content="RIKOTA — мережа сучасних стоматологічних клінік у Львові та Варшаві. Ортодонтія, імплантація, терапія, дитяча стоматологія, гігієна, діагностика." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#">
+        <img src="data:image/png;base64,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" alt="RIKOTA" class="brand__logo" />
+        <span class="brand__name">RIKOTA</span>
+      </a>
+
+      <input id="nav-toggle" type="checkbox" class="nav-toggle" aria-label="Відкрити меню" />
+      <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="#services">Послуги</a>
+        <a href="#process">Як ми працюємо</a>
+        <a href="#why">Переваги</a>
+        <a href="#pricing">Ціни</a>
+        <a href="#team">Лікарі</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts" class="btn btn--sm">Записатися</a>
+      </nav>
+
+      <a class="header-phone" href="tel:+380931703999">+38 (093) 170-39-99</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero__media">
+      <img src="https://www.rikota.com.ua/wp-content/uploads/2024/09/1_baner-na-say-t.jpg" alt="Усміхнені пацієнти RIKOTA" />
+
+      <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true">
+        <path d="M0,40 C240,120 480,0 720,40 C960,80 1200,0 1440,40 L1440,120 L0,120 Z"></path>
+      </svg>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge-row">
+        <div class="badge">15+ років досвіду</div>
+        <div class="badge">5 клінік у Львові</div>
+        <div class="badge">Сучасне обладнання</div>
+      </div>
+      <h1 class="display">Турбота про усмішку — без компромісів</h1>
+      <p class="lead">
+        Повний спектр стоматології: від профілактики до складної імплантації.
+        Комфорт, прозорі плани лікування та результат, яким хочеться пишатись.
+      </p>
+      <div class="hero__cta">
+        <a href="#contacts" class="btn btn--lg">Записатися на консультацію</a>
+        <a href="#services" class="btn btn--ghost">Дивитись послуги</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2>Наші послуги</h2>
+      <p class="section-intro">
+        Ми закриваємо всі потреби — від гігієни та лікування карієсу до ортодонтії, естетики та
+        хірургічних втручань. Нижче — ключові напрями зі зрозумілими поясненнями.
+      </p>
+
+      <article class="media-row">
+        <div class="media-row__img">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxASEhAPDw8PDw8PDxAPDw8PDw8NDQ0PFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OFxAQFSsZFxkrKystKysrKy0tKysrLS0tKystKystKy0tKy0rKy0tLSswKystNy0tNzctNysrKysrK//AABEIAKgBKwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAIDBQYBBwj/xAA2EAACAgIABAQFAgQFBQAAAAAAAQIDBBEFEiExBkFRYRMicYGRBzIUFVKhM0JiscEWNNHS4f/EABkBAAMBAQEAAAAAAAAAAAAAAAABAgMEBf/EACQRAQEAAgICAQMFAAAAAAAAAAABAhEDIRIxQQQTYRQiMlGB/9oADAMBAAIRAxEAPwCyZS8Y7MuWyg8QyfK9F5elYs9ruc0R4rb3smaOV0oZo7BjpoagpwbQyyx5FTSyxomRWkXOPItceZR48i0x5dgC2rmSOwCjYKy7oCdJL7Ssycgbk5PkBzmJWkeVfpAWNLbb9xZkwbBvUZOL7Pr9GPQi27xBoVjMvi0YLpDm+r0VEPFq5tSx3rf7oT2/w1/yEgaXH6Gh4XfrTMviZELEpwe0/s17NF3hT0gFbXDz9rRJbbvqZvAyepbOb8it2srjqiozI82pShJeenr6gdmdXX/iWQg/SUkm/sTVZSsT+G9rXV+QhpjeIQcXvsT8Oz99N6LLi+PtPaMnJuEib1W2N3GypyPcOrt9zK4Wb7lzj5HYcqcsVyrDrsAoWkimPaNJLJAV8ieUwa5ipxZeHatuUvsEcWx9phPh2jVafrthWZTtM6+Oftjj5LvKsHOOm16DA3idPLJ+jAzKzVOGNCSHMSQgFbKri9e4h6sBuIftN76Oe2WjUkdkhXS6sUGcrp+EU0MSJZoboBElQZSC1IMpiSuLHHLKmRV0B0J6BQ53aA7snyILr2RREEnfqQ2D9jJjIJYtg0qvMLmgazYbBl1PN3QN/L4rromdkhqyGPYSYkXB7j09V5SRpcO5SX/HoZqEt+QdiwsX7W0K1TTYsmpFo8mcvlj8q7OXn9iiwIWPu2aHDwZtb2hyoy0Co4PWpOXLzTk9uUnzN/cvseChHlX9h9GCl36v+wRGlDRctqXOrbTMjxOjqz0HJr2jL8Yxe7JsXhkzFNri9F9g5PYz+XFrt3QRg5HYlp7a6qzZPzlXh3bDecpnpM5kcnsbzkuFHmsgv9SFO6V6jacNq5a4r2RJfAkqWkl7HZI7o8+srxrF2mzONG64hRtMx2bTyyZHJPlWNCtHUdaOoyUzkbB2RLcRhx+hvRKo7avmYzWi1toBbKDn8Lt0/cmgVqGpE9sBkYk1UOrQZUD1oIrRK4MqY+y0jSGV9W/wSpNF+Y5DeUW9Diac5DWR8534sV3Y9A74exjxWxfx0F22x0eKLyiHjVSVG8AfTwzfcd/NH/QkSV8Vl/Qg8afjR+JwpehZ1cPSe9FNRxqxNfImvuXOH4gi+koa9XschXDJYYuJ26Fziw0tFQuMx7Rjsf8AzWfdQ6fXZUjO45VfI40UceMz84/+NE0eNrzX4CxP28llIq+JYykmFV8QhLz0OtaaJsHc9vO+LYzi36FVi2akabxJZGL0/MyNX+I9dtktsbtq8C0tYy6FJgp6RbY4FU5aeH692p+iKo0HhmvvIvjm8ox5brGtTE6RxkPTOuuJFfXsznF8DfVdzUMFyadj9wPP5wa6MUUXfFcDu0UyiYZY6XKywjjYydqRqZWS0V+Redysop8i8m04sIz5jqiV+Bb10y1SOfP26eO9FCIRShkEEVRIaxO1qLfogbhz3+SxnVuEl6plPwyXK+V+TEa1yflW/Uo78tptGgvW4mW49iy1zR7+xWPtJlvEtd3r6jK8zm13ezOZNjet+Xc1/h3CjZCt+aaNdI+5pHzvemtM67dd+n1ejW3cFi51y156fud4x4bXJzxj1XV+6DVVOaMtC1Ps0/ugiFpsOHeFa+RRlFNtfM/cHo8GwWTyNbgkpr3T7IWqqc+Pf4ZqWQvVL7oVect65o/TmWz1ijw3Q1yuuLXbWkUuT4SrjcoKKcG+aL115f6W/qO42Fj9TjfbJQypa301676DquKpdPiRT9FJdz1PH4JTyqLgv/hVPwrSrt8keT9y6Lr9wuOUKfU43e4xz4j6ve/9SHwy15rX2NtxfwtRZFagk4tPt3Xmib/pyj4fLyLsPxy2X6nHXpiP46H9WvuJ8cUeimn9wD9UsCFUIcnyycl2em0Yfg1NttkYRb69+7JuOlY8kz+Gq41kuzr6gHDaNz2W/EMPkUYvukScGw/PRllVY/2Nx6dIsKYaOQqJ9ChWm6NNwVcsEZ/Hr2y8plypI6OCd7c3PetLuFhNGRVVXhddp0uUbsTIYyJFIQB5mPtMpJ8P6voaaa2QfADQeF3ZIDkZYLdkAk5mVraRJde2Ds45DOYnatJ6paaLzHltIz0ZFtw+3yM82nH0tK0FVoHqCoGbdZY62ioy8blm2vqW2GzudTvqIAaZ7WgfJp2mT8uhy6gTDcXwOraQJwfxDZiuUXHmW9pdtGu4ri93ozPEOGKfs/Jm2OSM8PKbjdYnjzDn8CO5Kc5RjLcdRrb9WbjItj8PbaUdbbbSWvqfOVmDOO9rov7k8sy6cVXZdbKEeihKycoL7N6NNsfB9K4c10JoNfFfqoR/3Z4Dg+LOI1pRhl2cqWkpKuzS+sk2HcP8a8Qqtnd8WN0rFGMldDcNR3rlUdcv7n2Fsfar6FqkcyUtwfmtr7dDxJ/qxxCK/wC3xH9rv/YBt/Vricpxko4sYxTXw1VY4PbXVtz3vp6+bKtjPwy2+goSOWy6xPDKf1U4nL/JiR+lNr/3sOZPiHiGVOM7L5w5U1FUboik9b/a9vsu7C5xePBlXsvHuOUYlM78iahCKXvKTb0lGPdv2RQeIP1EwaMVZNdsMhzcVXXVOLnNvv08teezx7i2NZa+Vuds303OUpv8srZeFr+ZVxh88u77a+oeQvFq69rvN41fxbJ3yckF+2O98sfd+pvOA+HoULm182u5B4P8NwxoLzm188vc1ko9NGeTf+M1GQ4tXuX3LDhuPqJzMp3MscavSMPle9QxQGqAS4klFO2l6lSIuQvg+Fv5mWN2KWGDjqMUvYlnWdmE8Zpx55eV2z8oNEtVxYW44JZimiE1dwRCwrOVolrtEFmpEkQGu4KhPoKh8wSsIpWELkc2ctrrkOnM5Fkc2OrYtq0Iig3Es0wKLJ6mKnGix7NhtUijxLi1pmQ1i0x59Q2fVFVVIsKbNoQDWQIV0C7UDTiBGZENoz2VVpvp0NIn0AcmhPaKlE6Z6dSkRT4TzLS0G3UOLZJRZruW0kl9q9cPUVpwe/KSfn7onxOGczSUkpP/ACyXL1+poMSUZd9Fzi8Pql5dfToEtO4Yxl6vCd9ifLGPdrq9DF+n+XzqLhBbXMnz9Gtm8hw51tfCslHfXSe1+GSZdd205XSelpdk0t+yLYXC76sZDF/T/KUo8zqjFvXNzb0/oaarwvCiO7civ0ev3a9hzo33nNv1cm/uS43DuvTb35vuG/wrxy13krfgVQm3TBy9J2Lrv2QZiYsus5d356LKnChHrPX08yDIyOZ6j0iK7+VYyT1P9G4HV68l3LGxdCDhtHLHr3ZPaRlWOV3VTOr5thNa0hcvUfozh2uJFtwjG68z+wBi0uTSNLj1csUjo4sPlhy5fAiLOkaY5M6NOd1xI5VEohAHZjgtmOWrQyUCthUaaCIWPRPZSNjQAfK+zqYxs7FnE7TpigxMZFgBUWT1MEgwipiNYUssca7yKulhMGTWkq8qmGVWlNjXB8JiUsHLZGyKEx6kCTGiOxBMokUoAAdlCZXXYzTLnQpVp90VKcqoosce5cYWY000wWeH6DY4015MrbaZRqsbiW9NvsPys5PTXXRmK1NLpsfzWPyf4K8i8Yu5cR6ppdexPDisuiXT3M9Hn9JfgMxabH5fkXkLMVpLIlJ9WWPDMbme32QPgYHZzf2L2iOlpdEG2WefxE/kRzHITRFYxA4jdE7iLFh8y36jxmytXPCMPS2+7LGaGY0lpEszrnXTkt3UB1M4xFkfsWxggCTYtjNi2IHMdGIzY+L6BQ+RpHYnbENicjtSkb7kiGWIRn1sJqBawqoQHUhUASkLrJq0sQ2i0DQ+LEqLWEiRSAqLAqLA7BNcibl2BwkGUyGhFOkZyNFiobOqhMDV8YEiqZZ14YVDAQxtTKtj1Bl5Hh69CSPD16DLajrhIOxqpFpXw5egVVgpAm5QPjVh1cSavGSJfhj0i1FCApom5SKyQtFtDMZza7CsmMN8Mddoyq94bkbRab6GVxL+V+xosa3aNWNh0zg+ZGUkhI4LYA4Q3YtgDh8SMfHsKh8nzREgmcQeaON3JYoZYh9THWRAIqwqoGgF1CogukLrBagqsmriZD0MiSRQlRJBhdVgIh8WIx8SeqQFVYExY4ViyomG1oqqJljjzKSPqQZXIDrYRBjTRUZEsJoGjITkBaHwsRPCaKmFpLC8cpWLVWDlMr4Wk0bR7TpPOQDl5Kj59SPifEI1QlOT1pMxVXHHdZvelvoh4+xrpsq576koBg27SLBHQypsi04Xk+TKuR3Gs5ZIE2NYpbQxkWNZtIlZbNwadZwAQhCAO7HxfQjHx7CD5dtgC2QLO2AJbA4o77AtXcJlHoQa0wqHVDILrqFUkEohFIqcF1oJgiCsJgSpLEkiNiPSEZyHoah6EZ8UEVTIIksQA2uQXVYVkZaCa7SpSXFN4VXcUsJBFdpRaW0bTjvA1M5KQhoZG4mhauxUxs6k9U2MlxXYdsyVFbbA61J+wLnz0g3pOts54s4jKz5d/KvL1M3hZHLItOKvbZQ2rqKVrcetPROC520uppqbNo8u4JnNNJs3/C8raR04ZbcvJjpbSIh+xrLZrrht20iy2Z7h1unov6n0KjOkzh1nBpc2LYjgB3ZJHsQ7JI9gD5ytgB2wEI8+PSoS2JLQIRaTbYj6hCEIOqCKxCJqhER6OiEbqRJFCEI0kSSJ0QBIkSQiIRRCqkG01bEIcKi68Re5L/CR9zgho2fHGivIkhBLyEIk0kpaRS8Tu7iEKqxZbPZTWLqIQRpTqpcr2a3gXEey2cEaY3tnnNxsMXI2gkQjqjkp9UtSRocSe0IRUZ5J5DTghoIazogBmyWHYQgN/9k=" alt="Естетична стоматологія" />
+        </div>
+        <div class="media-row__body">
+          <h3>
+
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c2.8 0 6 1.4 6 5.2 0 2.2-1.2 3.8-2.4 5-.5.5-.6 1.3-.2 1.9.4.6.6 1.4.6 2.1 0 1.6-1.3 2.8-2.9 2.8-1.1 0-2-.6-2.5-1.5-.2-.4-.7-.4-.9 0-.5.9-1.4 1.5-2.5 1.5-1.6 0-2.9-1.2-2.9-2.8 0-.7.2-1.5.6-2.1.4-.6.3-1.4-.2-1.9C7.2 11 6 9.4 6 7.2 6 3.4 9.2 2 12 2z"/></svg>
+            Естетична стоматологія
+          </h3>
+          <p>Відбілювання, реставрації, мікровініринг/вініринг. Працюємо делікатно з емаллю, підбираємо колір та форму так, щоб усмішка виглядала природно.</p>
+          <ul class="bullets">
+            <li>Відбілювання офісне/домашнє</li>
+            <li>Композитні реставрації</li>
+            <li>Вініри E-max / композитні</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="media-row media-row--reverse">
+        <div class="media-row__img">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2024/09/2.2_kosmetychna-stomatologiya-1.jpg" alt="Ортодонтія та елайнери" />
+        </div>
+        <div class="media-row__body">
+          <h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10h18v4H3zM5 8h2v8H5zM17 8h2v8h-2z"/></svg>
+            Ортодонтія та елайнери
+          </h3>
+          <p>Вирівнюємо зуби брекет-системами або прозорими елайнерами. План лікування моделюємо на 3D-сканах, щоб ти бачив очікуваний результат.</p>
+          <ul class="bullets">
+            <li>Металеві/керамічні брекети</li>
+            <li>Елайнери (прозорі капи)</li>
+            <li>Ретенційні апарати</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="media-row">
+        <div class="media-row__img">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2024/09/2.1_stomatologichne-likuvannya.jpg" alt="Імплантація та хірургія" />
+        </div>
+        <div class="media-row__body">
+          <h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l4 4-8 8-4-4zM4 20h16v2H4z"/></svg>
+            Імплантація та хірургія
+          </h3>
+          <p>Відновлюємо втрачені зуби надійними системами імплантів. Працюємо під мікроскопом, застосовуємо гідацію та щадні протоколи.</p>
+          <ul class="bullets">
+            <li>Одноетапна/двохетапна імплантація</li>
+            <li>Синус-ліфтинг, кісткова пластика</li>
+            <li>Хірургія “видалення мудрості”</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="media-row media-row--reverse">
+        <div class="media-row__img">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2024/09/2.3_dytyacha-stomatologiya.jpg" alt="Терапія та дитяча стоматологія" />
+        </div>
+        <div class="media-row__body">
+          <h3>
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7a5 5 0 100 10 5 5 0 000-10zM2 12h3M19 12h3"/></svg>
+            Терапія та дитяча стоматологія
+          </h3>
+          <p>Лікуємо карієс та пульпіти безболісно; з дітьми працюємо м’яко, поступово знайомимо з кабінетом і формуємо позитивний досвід.</p>
+          <ul class="bullets">
+            <li>Пломбування фотополімерами</li>
+            <li>Ендодонтія під мікроскопом</li>
+            <li>Профілактика та герметизація фісур</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="process" class="section section--soft">
+    <div class="container">
+      <h2>Як ми працюємо</h2>
+      <ol class="steps">
+        <li>
+          <span class="step-num">1</span>
+          <div>
+            <h4>Діагностика та 3D-скан</h4>
+            <p>Збираємо повну картину: фото, КТ за показами, інтраоральний скан. Це дає точний план і прогноз.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">2</span>
+          <div>
+            <h4>План лікування</h4>
+            <p>Обговорюємо варіанти, терміни, бюджет. Даємо прозору смету й етапи — без сюрпризів.</p>
+          </div>
+        </li>
+        <li>
+          <span class="step-num">3</span>
+          <div>
+            <h4>Лікування та контроль</h4>
+            <p>Працюємо за протоколами, пояснюємо кожен крок. Після завершення — ретенція та профілактичні огляди.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="why" class="section">
+    <div class="container">
+      <h2>Чому RIKOTA</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 7-7 13-7-13z"/></svg>
+          </div>
+          <h4>Комфорт і турбота</h4>
+          <p>Атмосфера без стресу: пояснюємо кожен крок, пропонуємо знеболення та седацію за потреби.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12l5 5L21 4"/></svg>
+          </div>
+          <h4>Протоколи та якість</h4>
+          <p>Працюємо по міжнародних рекомендаціях, під мікроскопом, з перевіреними матеріалами.</p>
+        </div>
+        <div class="feature">
+          <div class="feature__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h4>3D-планування</h4>
+          <p>Використовуємо цифрові відбитки, віртуальні сетапи при ортодонтії й хірургічні гіди при імплантації.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section section--soft">
+    <div class="container">
+      <h2>Орієнтовні ціни</h2>
+      <p class="section-intro">Кінцева вартість залежить від діагностики та плану лікування. Наведені діапазони допоможуть зорієнтуватися.</p>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Гігієна</h3>
+          <p class="price">1 500–2 800 грн</p>
+          <ul>
+            <li>Ультразвук + Air-Flow</li>
+            <li>Полірування, рекомендації</li>
+            <li>Огляд лікаря</li>
+          </ul>
+        </div>
+        <div class="price-card price-card--accent">
+          <h3>Елайнери</h3>
+          <p class="price">28 000–65 000 грн</p>
+          <ul>
+            <li>Сетап, виготовлення кап</li>
+            <li>Контрольні візити</li>
+            <li>Ретенція</li>
+          </ul>
+        </div>
+        <div class="price-card">
+          <h3>Імплантація</h3>
+          <p class="price">18 000–40 000 грн</p>
+          <ul>
+            <li>Імплант + встановлення</li>
+            <li>Тимчасова коронка</li>
+            <li>Постійна коронка окремо</li>
+          </ul>
+        </div>
+      </div>
+      <p class="muted">Кчаууууууууу</p>
+    </div>
+  </section>
+
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Наші лікарі</h2>
+
+      <div class="team">
+        <article class="doc">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2025/05/362A1360-e1746435330573-1920x640.jpg" alt="Лікар ортодонт" />
+          <div class="doc__body">
+            <h4>д-р Іван Петров — Ортодонт</h4>
+            <p>10+ років, елайнери/брекети, цифрове планування. Працює з комбінованими прикусами та рецидивами.</p>
+            <ul class="tags">
+              <li>Елайнери</li><li>Брекети</li><li>Ретенція</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="doc">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2024/02/Hp-4-of-46-e1744208356942-1920x640.jpg" alt="Дитячий стоматолог" />
+          <div class="doc__body">
+            <h4>д-р Олена Коваль — Дитячий стоматолог</h4>
+            <p>Профілактика, герметизація, м’які підходи. Формуємо довіру та правильні звички з раннього віку.</p>
+            <ul class="tags">
+              <li>Діти</li><li>Гігієна</li><li>Профілактика</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="doc">
+          <img src="https://www.rikota.com.ua/wp-content/uploads/2023/03/362A0970-e1744279015188-1920x640.jpg" alt="Хірург-імплантолог" />
+          <div class="doc__body">
+            <h4>д-р Андрій Савчук — Імплантолог</h4>
+            <p>Комплексна імплантація, кісткова пластика, робота під гідами. Фокус на передбачуваності результату.</p>
+            <ul class="tags">
+              <li>Імпланти</li><li>Синус-ліфтинг</li><li>Гіди</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="section section--soft">
+    <div class="container">
+      <h2>Відгуки пацієнтів</h2>
+      <div class="reviews">
+        <figure class="bubble">
+          <blockquote>“Дуже боялась лікування, але все пройшло спокійно і безболісно. Команда супер!”</blockquote>
+          <figcaption>Марія, Львів</figcaption>
+        </figure>
+        <figure class="bubble">
+          <blockquote>“Поставив імплант — виглядає як свій зуб. Пояснили все поетапно, без «прихованих» платежів.”</blockquote>
+          <figcaption>Олег, Варшава</figcaption>
+        </figure>
+        <figure class="bubble">
+          <blockquote>“Елайнери — топ. Результат передбачуваний, контрольні візити швидкі, сервіс як у приватній клініці ЄС.”</blockquote>
+          <figcaption>Софія, Львів</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container">
+      <h2>Поширені запитання</h2>
+      <div class="faq">
+        <details>
+          <summary>Чи боляче лікувати зуби?</summary>
+          <p>Ми працюємо зі знеболенням сучасними препаратами, пояснюємо кожен крок. За потреби — седація.</p>
+        </details>
+        <details>
+          <summary>Скільки триває курс елайнерів?</summary>
+          <p>У середньому 6–12 місяців залежно від складності. Після — ретенція для стабілізації результату.</p>
+        </details>
+        <details>
+          <summary>Чи можна розтермінування?</summary>
+          <p>Так, поетапна оплата відповідно до плану лікування. Узгоджуємо індивідуально.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="section section--soft">
+    <div class="container">
+      <h2>Контакти</h2>
+      <div class="contacts">
+        <div class="contact-card">
+          <h4>Запис</h4>
+          <p><a href="tel:+380689105063" class="link">+38 (068) 910-50-63</a></p>
+          <p><a href="mailto:clinic@rikota.com.ua" class="link">clinic@rikota.com.ua</a></p>
+          <p class="muted">Пн–Сб 09:00–20:00</p>
+        </div>
+        <div class="contact-card">
+          <h4>Адреси</h4>
+          <ul class="addr">
+            <li>Львів, вул. Шевченка, 17</li>
+            <li>Львів, вул. Зелена, 184</li>
+            <li>Львів, вул. Стрийська, 45ж</li>
+            <li>Львів, вул. Замарстинівська, 55в</li>
+            <li>Варшава, вул. Окшей, 12</li>
+          </ul>
+        </div>
+        <div class="contact-card contact-card--map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d41178.62689556266!2d23.993200798838828!3d49.82997659873135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0LPRg9Cz0Lsg0LrQsNGA0YLQsCDRgNGW0LrQvtGC0LDQsCDRgdGC0L7QvNC-0YLQvtC70L7Qs9GW0Y8!5e0!3m2!1suk!2sua!4v1755618713759!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Маквін я скорость кчауууууууууууууууууу</p>
+      <nav class="footer-nav">
+        <a href="#services">Послуги</a>
+        <a href="#pricing">Ціни</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
