@@ -7,7 +7,24 @@
   <meta name="description" content="RIKOTA — мережа сучасних стоматологічних клінік у Львові та Варшаві. Ортодонтія, імплантація, терапія, дитяча стоматологія, гігієна, діагностика." />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+<button id="open-register" class="btn">Зареєструватися</button>
+
+<div id="register-modal" class="modal">
+  <div class="modal-content">
+    <span id="close-register" class="close">&times;</span>
+    <h2>Реєстрація</h2>
+    <form id="register-form">
+      <input type="text" id="username" placeholder="Ім'я користувача" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Пароль" required>
+      <button type="submit" class="btn">Зареєструватися</button>
+      <div id="error-box"></div>
+      <div id="success-box"></div>
+    </form>
+  </div>
+</div>
 
   <header class="site-header">
     <div class="container header-grid">
@@ -36,47 +53,7 @@
     </div>
 <div class="header-extra" style="display:flex; justify-content:flex-end; align-items:center; gap:15px;">
   <div id="clock" style="font-weight:bold;"></div>
-  <button id="theme-toggle" style="padding:5px 10px; cursor:pointer;">🌙 Тема</button>
 </div>
-
-<script>
-  function updateClock() {
-    const now = new Date();
-    const clockEl = document.getElementById("clock");
-    if(clockEl) clockEl.textContent = now.toLocaleTimeString("uk-UA");
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
-
-  const themeBtn = document.getElementById("theme-toggle");
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      localStorage.setItem("theme",
-        document.body.classList.contains("dark") ? "dark" : "light"
-      );
-    });
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark");
-    }
-  }
-</script>
-
-<style>
-  body.dark {
-    background-color: #121212;
-    color: #eee;
-  }
-  body.dark header {
-    background-color: #1e1e1e;
-  }
-  #theme-toggle {
-    background-color:#2a9d8f; 
-    color:#fff; 
-    border:none; 
-    border-radius:6px;
-  }
-</style>
 
   </header>
 
@@ -403,66 +380,10 @@
       </nav>
     </div>
   </footer>
-<style>
-  body.dark { background: #121212; color: #eee; }
-  body.dark header { background: #1e1e1e; }
-  .popup {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #fff;
-    color: #000;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    animation: fadeIn 0.5s;
-    z-index: 9999;
-  }
-  .popup button {
-    margin-top: 10px;
-    background: #2a9d8f;
-    color: #fff;
-    border: none;
-    padding: 6px 12px;
-    cursor: pointer;
-    border-radius: 6px;
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-</style>
 
-<script>
-  function updateClock() {
-    const now = new Date();
-    const clockEl = document.getElementById("clock");
-    if (clockEl) clockEl.textContent = now.toLocaleTimeString("uk-UA");
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
-  const themeBtn = document.getElementById("theme-toggle");
-  if (themeBtn) {
-    themeBtn.addEventListener("click", () => {
-      document.body.classList.toggle("dark");
-      localStorage.setItem("theme", document.body.classList.contains("dark") ? "dark" : "light");
-    });
-    if (localStorage.getItem("theme") === "dark") {
-      document.body.classList.add("dark");
-    }
-  }
-  setTimeout(() => {
-    const popup = document.createElement("div");
-    popup.className = "popup";
-    popup.innerHTML = `
-      <p>🎁 Акція! Запишіться сьогодні та отримайте <b>знижку 10%</b> на лікування.</p>
-      <button id="close-popup">Закрити</button>
-    `;
-    document.body.appendChild(popup);
-    document.getElementById("close-popup").onclick = () => popup.remove();
-  }, 5000);
-  
 </script>
+<script src="script.js.js"></script>
+
 
 </body>
 </html>
